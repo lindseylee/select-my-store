@@ -1,0 +1,20 @@
+<h1>Welcome#index</h1>
+<p>Find me in app/views/welcome/index.html.erb</p>
+
+
+<%= form_for :person do |f| %>
+  Who are you shopping for?: <%= f.text_field :name %><br />
+  Age? : <%= f.text_field :age %><br />
+  <%= radio_button_tag(:sex, "female") %>
+<%= label_tag(:sex, "Female") %>
+<%= radio_button_tag(:sex, "male") %>
+<%= label_tag(:sex, "Male") %>
+  <%= button_to "Submit", @results, remote:true %>
+<% end %>
+
+
+<p> This is where the chosen style buttons will be displayed </p>
+
+<p> And this is where style choices will be displayed </p>
+
+<%= button_to "Show Results", @results, remote:true %>
