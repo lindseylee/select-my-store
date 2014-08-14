@@ -1,3 +1,3 @@
 class Style < ActiveRecord::Base
-  has_many :store_style
-  has_many :stores
+  has_and_belongs_to_many :stores
+end

@@ -27,6 +27,7 @@ gem 'hirb'
 gem 'pry-byebug'
 gem 'rspec-rails'
 gem 'pg'
+gem 'foundation-rails'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index' 
+  get 'welcome/index'
+  get '/' => 'welcome#index'
+  get 'results' => 'results#results' 
 
   #get '/', to: '/'
   #get '/home', to: 'home'

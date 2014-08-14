@@ -1,3 +1,5 @@
+/*= require foundation */
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -12,4 +14,14 @@
  *
  *= require_tree .
  *= require_self
+ *= require foundation_and_overrides
+
  */
+
+welcome {
+    text-align: center
+}
+
+.bigbutton {
+    color: black;
+}

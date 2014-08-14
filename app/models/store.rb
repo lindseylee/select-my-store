@@ -1,4 +1,3 @@
 class Store < ActiveRecord::Base
-  has_many :store_style
-  has_many :styles, :through => :store_styles
+  has_and_belongs_to_many :styles
 end

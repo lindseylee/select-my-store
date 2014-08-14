@@ -11,14 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140801151517) do
-
-  create_table "store_styles", force: true do |t|
-    t.integer  "store_id"
-    t.integer  "style_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20140805213538) do
 
   create_table "stores", force: true do |t|
     t.string   "name"
@@ -30,6 +23,14 @@ ActiveRecord::Schema.define(version: 20140801151517) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "stores_styles", id: false, force: true do |t|
+    t.integer "store_id", null: false
+    t.integer "style_id", null: false
+  end
+
+  add_index "stores_styles", ["store_id", "style_id"], name: "index_stores_styles_on_store_id_and_style_id"
+  add_index "stores_styles", ["style_id", "store_id"], name: "index_stores_styles_on_style_id_and_store_id"
 
   create_table "styles", force: true do |t|
     t.string   "style"
