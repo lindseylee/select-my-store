@@ -13,6 +13,13 @@
 
 ActiveRecord::Schema.define(version: 20140805213538) do
 
+  create_table "store_styles", force: true do |t|
+    t.integer  "store_id"
+    t.integer  "style_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "stores", force: true do |t|
     t.string   "name"
     t.string   "website"

@@ -1,0 +1,35 @@
+ <br>
+
+    <div class="row">
+        <div class="small-6 large-centered columns"
+
+            <div id="content">
+            <!-- <form action="/results" method="get"> -->
+            <%= form_for @user, url: '/results', html: do |f| %>
+              <p> 
+               <%= f.text_field :name, :placeholder => "Who are you shopping for?", %>
+              <%= f.text_field :age, :placeholder => "Age?" %>
+              </p>
+                <p>  
+                  <%= radio_button_tag(:sex, "female")%>
+                  <%= label_tag(:sex_female, "Female") %>
+                  <%= radio_button_tag(:sex, "male")%>
+                  <%= label_tag(:sex_male, "Male") %>
+                </p>
+        
+              <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
+            
+  <h2><strong>Choose Three Styles</strong></h2>
+  <!-- this is where the buttons will appear using a loop and instance variable-->
+    <p>
+      <%=f.submit %>
+    </p>
+
+   <% end %>
+</div>
+       </div>
+    </div>
+
+  <br>
+<br>
+

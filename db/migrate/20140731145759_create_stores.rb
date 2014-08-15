@@ -12,3 +12,5 @@ class CreateStores < ActiveRecord::Migration
     end
   end
 end
+
+

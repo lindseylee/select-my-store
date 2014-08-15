@@ -32,8 +32,8 @@ lines.each do |line|
   store_name = attributes.delete("name")
 
   store = Store.find_by(name: store_name)
-  style = Style.create(attributes)
-  store.styles << style
+  style = Style.create!(attributes)
+  StoreStyle.create({store_id: store.id, style_id: style.id})
 
 
   #require 'pry-byebug'
