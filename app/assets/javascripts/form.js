@@ -1,20 +1,12 @@
 <script language="javascript" type="text/javascript">
 
-$(document).ready(function(){
-
-$("#hide").click(function(){
-  $("top_form").hide();
-});
-
-$("#show").click(function(){
-  $("bottom_form").show();
-});
-
-});
-
-
-   $("#topbutton").click(function() { 
-
-    $("#content").toggle();
-});
+$( "selectsex" )
+  .change(function () {
+    var str = "";
+    $( "sex option:selected" ).each(function() {
+      str += $( this ).text() + " ";
+    });
+    $( "div" ).text( str );
+  })
+  .change();
 </script>

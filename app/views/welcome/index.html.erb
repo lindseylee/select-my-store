@@ -16,9 +16,9 @@
                <%= f.text_field :name, :placeholder => ("Who are you shopping for?") %>
               <%= f.text_field :age, :placeholder => "Age?" %>
                 
-                  <%= radio_button_tag(:sex, "female")%>
+                  <%= radio_button_tag(:sex, "female") %>
                   <%= label_tag(:sex_female, "Female") %>
-                  <%= radio_button_tag(:sex, "male")%>
+                  <%= radio_button_tag(:sex, "male") %>
                   <%= label_tag(:sex_male, "Male") %>
              
 
@@ -31,7 +31,9 @@
                      
                   <% Style.all.each do |style| %>
 
-                  <%= button_to style.style, class: "button" %>
+                  <%= check_box_tag style.style %>
+                  <%= label_tag style.style %>
+                  <br>
                   <% end %>
                   <br>
                   <br>

@@ -5,7 +5,7 @@
 <% Store.all.each do |store| %>
 
 <%= store.name %>
-<%= store.website %>
+<%= link_to "Visit Website", store.website %>
 <%= store.image %>
 <%= store.description %>
 <br>
