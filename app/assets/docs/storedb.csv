@@ -1,26 +1,26 @@
 name,website,image,min,max,description
-NastyGal,http://www.nastygal.com,app/assets/images/storelogos/nastygal-logo.jpg,18,45,Store description goes here.
-Anthropologie,http://www.anthropologie.com,app/assets/images/storelogos/anthropolgie-logo.jpg,18,45,Store description goes here.
-Dollskill,http://www.dollskill.com/,app/assets/images/storelogos/dollskilll-logo.jpg,18,35,Store description goes here.
-For Love & Lemons,http://www.forloveandlemons.com/,app/assets/images/storelogos/forloveandlemons-logo.jpg,18,45,Store description goes here.
-Stone Cold Fox,http://www.thestonecoldfox.com/,app/assets/images/storelogos/stonecoldfox-logo.jpg,18,45,Store description goes here.
-Sugarhigh + Lovestoned,http://www.sugarhighlovestoned.com/,app/assets/images/storelogos/sugarhigh-logo.jpg,18,35,Store description goes here.
-Stoned Immaculate Vintage,http://www.stonedimmaculatevintage.com/,app/assets/images/storelogos/stonedimmaculate-logo.jpg,18,35,Store description goes here.
-Topshop,http://www.us.topshop.com/,app/assets/images/storelogos/topshop-logo.jpg,18,45,Store description goes here.
-ASOS,http://www.us.asos.com/,app/assets/images/storelogos/asos-logo.jpg,18,45,Store description goes here.
-American Apparel,http://www.americanapparel.net/,app/assets/images/storelogos/americanapparel-logo.jpg,18,40,Store description goes here.
-Unif,http://www.unifclothing.com,app/assets/images/storelogos/unif-logo.jpg,18,30,Store description goes here.
-Urban Outfitters,http://www.urbanoutfitters.com,app/assets/images/storelogos/uo-logo.jpg,18,45,Store description goes here.
-RVCA,http://www.rvca.com,app/assets/images/storelogos/rvca-logo.jpg,18,30,Store description goes here.
-SSENSE,http://www.ssense.com,app/assets/images/storelogos/ssense-logo.jpg,18,30,Store description goes here.
-Barney's,http://www.barneys.com,app/assets/images/storelogos/barneys-logo.jpg,18,45,Store description goes here.
-Kitson,http://www.shopkitson.com/,app/assets/images/storelogos/kitson-logo.jpg,18,27,Store description goes here.
-Nordstrom,http://www.shop.nordstrom.com/,app/assets/images/storelogos/nordstrom-logo.jpg,18,45,Store description goes here.
-MR PORTER,http://www.mrporter.com,app/assets/images/storelogos/mrporter-logo.jpg,25,45,Store description goes here.
-End.,http://www.endclothing.com,app/assets/images/storelogos/end-logo.jpg,18,45,Store description goes here.
-Mass & Stacks,http://www.maasandstacks.com,app/assets/images/storelogos/maasandstacks-logo.jpg,18,35,Store description goes here.
-HAVEN,http://www.havenshop.ca/,app/assets/images/storelogos/haven-logo.jpg,18,45,Store description goes here.
-BureauBelfast,http://www.thebureaubelfast.com,app/assets/images/storelogos/bureau-logo.jpg,18,45,Store description goes here.
-Union LosAngelos,http://www.store.unionlosangeles.com/,app/assets/images/storelogos/union-logo.jpg,25,45,Store description goes here.
-NorseStore,http://www.norsestore.com/,app/assets/images/storelogos/norse-logo.jpg,20,45,Store description goes here.
-Huf ,http://www.hufworldwide.com/,app/assets/images/storelogos/huf-logo.jpg,18,30,Store description goes here.
+NastyGal,http://www.nastygal.com,/assets/storelogos/nasty-gal-logo.jpg,18,45,Store description goes here.
+Anthropologie,http://www.anthropologie.com,/assets/storelogos/anthropologie-logo.jpg,18,45,Store description goes here.
+Dollskill,http://www.dollskill.com/,/assets/storelogos/dollskill-logo.jpg,18,35,Store description goes here.
+For Love & Lemons,http://www.forloveandlemons.com/,/assets/storelogos/forloveandlemons-logo.jpg,18,45,Store description goes here.
+Stone Cold Fox,http://www.thestonecoldfox.com/,/assets/storelogos/stonecoldfox-logo.jpg,18,45,Store description goes here.
+Sugarhigh + Lovestoned,http://www.sugarhighlovestoned.com/,/assets/storelogos/sugarhigh-logo.jpg,18,35,Store description goes here.
+Stoned Immaculate Vintage,http://www.stonedimmaculatevintage.com/,/assets/storelogos/stonedimmaculate-logo.jpg,18,35,Store description goes here.
+Topshop,http://www.us.topshop.com/,/assets/storelogos/topshop-logo.jpg,18,45,Store description goes here.
+ASOS,http://www.us.asos.com/,/assets/storelogos/asos-logo.jpg,18,45,Store description goes here.
+American Apparel,http://www.americanapparel.net/,/assets/storelogos/americanapparel-logo.jpg,18,40,Store description goes here.
+Unif,http://www.unifclothing.com,/assets/storelogos/unif-logo.jpg,18,30,Store description goes here.
+Urban Outfitters,http://www.urbanoutfitters.com,/assets/storelogos/uo-logo.jpg,18,45,Store description goes here.
+RVCA,http://www.rvca.com,/assets/storelogos/rvca-logo.jpg,18,30,Store description goes here.
+SSENSE,http://www.ssense.com,/assets/storelogos/ssense-logo.jpg,18,30,Store description goes here.
+Barney's,http://www.barneys.com,/assets/storelogos/barneys-logo.jpg,18,45,Store description goes here.
+Kitson,http://www.shopkitson.com/,/assets/storelogos/kitson-logo.jpg,18,27,Store description goes here.
+Nordstrom,http://www.shop.nordstrom.com/,/assets/storelogos/nordstrom-logo.jpg,18,45,Store description goes here.
+MR PORTER,http://www.mrporter.com,/assets/storelogos/mrporter-logo.jpg,25,45,Store description goes here.
+End.,http://www.endclothing.com,/assets/storelogos/end-logo.jpg,18,45,Store description goes here.
+Mass & Stacks,http://www.maasandstacks.com,/assets/storelogos/maasandstacks-logo.jpg,18,35,Store description goes here.
+HAVEN,http://www.havenshop.ca/,/assets/storelogos/haven-logo.jpg,18,45,Store description goes here.
+BureauBelfast,http://www.thebureaubelfast.com,/assets/storelogos/bureau-logo.jpg,18,45,Store description goes here.
+Union LosAngelos,http://www.store.unionlosangeles.com/,/assets/storelogos/union-logo.jpg,25,45,Store description goes here.
+NorseStore,http://www.norsestore.com/,/assets/storelogos/norse-logo.jpg,20,45,Store description goes here.
+Huf ,http://www.hufworldwide.com/,/assets/storelogos/huf-logo.jpg,18,30,Store description goes here.

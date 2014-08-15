@@ -2,12 +2,19 @@
 <h1 align="center"><strong>Shopping Matches</strong> </h1>
 </div>
 
-<% Store.all.each do |store| %>
 
-<%= store.name %>
-<%= link_to "Visit Website", store.website %>
-<%= store.image %>
-<%= store.description %>
+<div class="row">
+    <% Store.all.each do |store| %>
+    <div>
+        <img src= <%=  store.image %> width="250" height="250">
+    </div>
+    <div>
+        <%= store.name %>
+        <%= link_to "Visit Website", store.website %>
+        <p><%= store.description %></p>
+        <img src= <%= image_path('storelogos/nasty-gal-logo.jpg') %> width="250" height="250">
+    </div>
+</div>
 <br>
 <br>
 
@@ -54,12 +61,12 @@
     </div>
 </div> -->
 
+<!-- <br>
 <br>
-<br>
-
+ -->
 <!-- <h3 align="center"> These are your results: </h3> -->
 
-<div class="row">
+<!-- <div class="row">
   <div class="small-4 small-centered columns"> 
     <div class="small- 11 columns"><img src="http://helloimll.files.wordpress.com/2014/08/anthropologie-logo.jpg?w=610" width="200" height="200"></div>
     </div>
@@ -146,7 +153,7 @@
 </div>
 
 <br>
-
+ -->
 
 
 <!-- <div class="row">
