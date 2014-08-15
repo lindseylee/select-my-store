@@ -26,6 +26,10 @@ welcome {
     color: black;
 }
 
+.top-bar-section {
+    background-color: red;
+}
+
 .top-bar {
     height: 130px;
     background: black;
@@ -37,6 +41,12 @@ welcome {
 
 .right {
 
+}
+
+
+
+li.nav-button {
+    background-color: red
 }
 
 .bottom-bar {
@@ -66,6 +76,10 @@ welcome {
 
 .button-submit:hover {
     background-color: black
+}
+
+.nav-button {
+    background-color: red
 }
 
 

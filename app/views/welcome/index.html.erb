@@ -25,19 +25,19 @@
 
                 
         
-              <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
- <h2><strong>Choose Three Styles</strong></h2>
- <br>
-   
-<% Style.all.each do |style| %>
+                  <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
+                   <h2><strong>Choose Three Styles</strong></h2>
+                   <br>
+                     
+                  <% Style.all.each do |style| %>
 
-<p class="button" %= button_to style.style%></p>
-<% end %>
-<br>
-<br>
+                  <%= button_to style.style, class: "button" %>
+                  <% end %>
+                  <br>
+                  <br>
 
-<button class="button-submit" %= f.submit "See Your Results"%></button>
-<% end %>
+                  <button class="button-submit" %= f.submit "See Your Results"%></button>
+                <% end %>
 
 <br>
 <br>

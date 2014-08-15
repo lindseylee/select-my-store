@@ -19,7 +19,7 @@ lines.each do |line|
   Store.create(attributes)
 end
 
-lines = File.new('app/assets/docs/styledb1.csv').readlines
+lines = File.new('app/assets/docs/styledb.csv').readlines
 puts "Read #{lines.count} lines #{lines}"
 
 header = lines.shift.strip
@@ -31,9 +31,16 @@ lines.each do |line|
   attributes = Hash[keys.zip values]
   store_name = attributes.delete("name")
 
+  # <-- attributes = {sex: "female", style: "grunge"}
+  # binding.pry
+  
+  style = Style.find_by(style: attributes["style"], sex: attributes["sex"])
+  if style.nil?
+    style = Style.create!(attributes)
+  end
+
   store = Store.find_by(name: store_name)
-  style = Style.create!(attributes)
-  # StoreStyle.create({store_id: store.id, style_id: style.id})
+  StoreStyle.create({store_id: store.id, style_id: style.id})
 
 
   #require 'pry-byebug'
