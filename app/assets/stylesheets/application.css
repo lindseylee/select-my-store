@@ -25,3 +25,64 @@ welcome {
 .bigbutton {
     color: black;
 }
+
+.top-bar {
+    height: 130px;
+    background: black;
+}
+
+.active {
+    background-color: red;
+}
+
+.right {
+
+}
+
+.bottom-bar {
+    height: 130px;
+    background-color: black;
+    position: relative;
+    margin-bottom: 0;
+    display: block;
+    width: 100%;
+}
+
+.button {
+    background-color: black;
+    color: white;
+}
+
+.button:hover {
+    background-color: red;
+}
+
+.button-submit {
+    width: 8em;
+    height: 3em;
+    background-color: red;
+    border-style: solid black;
+}
+
+.button-submit:hover {
+    background-color: black
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

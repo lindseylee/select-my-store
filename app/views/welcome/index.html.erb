@@ -23,16 +23,28 @@
              
 
 
-                <%= f.submit "See Your Results" %>
-                <% end %>
+                
         
               <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
  <h2><strong>Choose Three Styles</strong></h2>
+ <br>
    
 <% Style.all.each do |style| %>
 
-<%= button_to style.style %>
+<p class="button" %= button_to style.style%></p>
 <% end %>
+<br>
+<br>
+
+<button class="button-submit" %= f.submit "See Your Results"%></button>
+<% end %>
+
+<br>
+<br>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script> $(document).ready ->
   $("#new_article").on("ajax:success", (e, data, status, xhr) ->
