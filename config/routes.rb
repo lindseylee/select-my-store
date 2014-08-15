@@ -2,7 +2,9 @@ Rails.application.routes.draw do
 
   get 'welcome/index'
   get '/' => 'welcome#index'
+  post '/welcome/index' => 'results#results'
   get 'results' => 'results#results' 
+  post 'results' => 'results#results' 
 
   #get '/', to: '/'
   #get '/home', to: 'home'

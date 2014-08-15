@@ -5,21 +5,41 @@
 <br>
 <h1 class="welcome"><strong>Start Shopping</strong></h1>
 
+<div class="row">
+        <div class="small-6 large-centered columns"
 
+            <div id="content">
+            <!-- <form action="/results" method="get"> -->
+            <%= form_for('/results') do |f| %>
+
+              
+               <%= f.text_field :name, :placeholder => ("Who are you shopping for?") %>
+              <%= f.text_field :age, :placeholder => "Age?" %>
+                
+                  <%= radio_button_tag(:sex, "female")%>
+                  <%= label_tag(:sex_female, "Female") %>
+                  <%= radio_button_tag(:sex, "male")%>
+                  <%= label_tag(:sex_male, "Male") %>
+             
+
+
+                <%= f.submit "See Your Results" %>
+                <% end %>
+        
+              <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
+ <h2><strong>Choose Three Styles</strong></h2>
    
 <% Style.all.each do |style| %>
-<%= style.style %>
+
+<%= button_to style.style %>
 <% end %>
 
-<% Style.all.each do |style| %>
-    
-    <% results = [] %>
-    <% if !results.include? style.style %>
-    <% results << style.style %>
-    <% end %>
-    <% results.each do |result| %>
-    <% end %>
-<%= result.all %>
-
-<% end %>
+<script> $(document).ready ->
+  $("#new_article").on("ajax:success", (e, data, status, xhr) ->
+    $("#new_article").append xhr.responseText
+  ).on "ajax:error", (e, xhr, status, error) ->
+    $("#new_article").append "<p>ERROR</p>"
+</script>
+           
+  
 

@@ -1,6 +1,6 @@
 class ResultsController < ApplicationController
   def results
-    @stores = StoreStyle.find(params[:id])
+    # @stores = StoreStyle.find(params[:id])
   end
 end
 

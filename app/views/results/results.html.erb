@@ -1,32 +1,18 @@
-<link rel="stylesheet" type="text/css" href="app/assets/stylesheets/application.css">
-
-<nav class="top-bar" data-topbar>
-  <ul class="title-area">
-    <li class="name">
-       <h1><a href="#"><img src="http://helloimll.files.wordpress.com/2014/08/select-my-store-logo.jpg?w=610&h=146" height="100" width="200"></a></h1>
-    </li>
-   
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="active"><a href="#">Sign Up</a></li>
-      <li class="has-dropdown">
-       </li>
-    </ul>
-
-    <!-- Left Nav Section -->
-    <ul class="right">
-      <li><a href="#">Home</a></li>
-    </ul>
-  </section>
-</nav>
-
 <br>
 <h1 align="center"><strong>Shopping Matches</strong> </h1>
 </div>
+
+<% Store.all.each do |store| %>
+
+<%= store.name %>
+<%= store.website %>
+<%= store.image %>
+<%= store.description %>
+<br>
+<br>
+
+<% end %>
+
 <!-- 
 <div class="large-3 large-5 columns">
     <div class="row">
