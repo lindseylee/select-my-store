@@ -3,22 +3,21 @@
 </div>
 
 
-<div class="row">
-    <% Store.all.each do |store| %>
-    <div>
-        <img src= <%=  store.image %> width="250" height="250">
-    </div>
-    <div>
-        <%= store.name %>
-        <%= link_to "Visit Website", store.website %>
-        <p><%= store.description %></p>
-        <img src= <%= image_path('storelogos/nasty-gal-logo.jpg') %> width="250" height="250">
-    </div>
-</div>
-<br>
-<br>
 
-<% end %>
+<div>
+    <% @store_results.all.each do |store| %>
+    <img src= <%=  store.image %> width="350" height="350">
+    <br>
+    <br>
+    <%= store.name %>
+    <%= link_to "Visit Website", store.website %>
+    <p><%= store.description %></p>
+    <% end %>
+    
+</div> 
+
+
+
 
 <!-- 
 <div class="large-3 large-5 columns">

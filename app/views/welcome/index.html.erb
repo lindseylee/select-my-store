@@ -10,11 +10,11 @@
 
             <div id="content">
             <!-- <form action="/results" method="get"> -->
-            <%= form_for('/results') do |f| %>
+            <%= form_tag("/results", method: "post") do %>
 
               
-               <%= f.text_field :name, :placeholder => ("Who are you shopping for?") %>
-              <%= f.text_field :age, :placeholder => "Age?" %>
+               <%= text_field_tag('', '', :placeholder => "Who are you shopping for?") %>
+              <%= text_field_tag :age, '', :placeholder => "Age?" %>
                 
                   <%= radio_button_tag(:sex, "female") %>
                   <%= label_tag(:sex_female, "Female") %>
@@ -31,14 +31,14 @@
                      
                   <% Style.all.each do |style| %>
 
-                  <%= check_box_tag style.style %>
+                  <%= check_box_tag style.style%>
                   <%= label_tag style.style %>
                   <br>
                   <% end %>
                   <br>
                   <br>
 
-                  <button class="button-submit" %= f.submit "See Your Results"%></button>
+                  <button class="button-submit" <%= "See Your Results" %></button>
                 <% end %>
 
 <br>

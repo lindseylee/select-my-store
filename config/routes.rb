@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
-  get '/' => 'welcome#index'
-  post '/welcome/index' => 'results#results'
+  root 'welcome#index'
+  post '/results' => 'results#results'
   get 'results' => 'results#results' 
   
 
