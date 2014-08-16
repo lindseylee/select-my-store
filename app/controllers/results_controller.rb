@@ -8,7 +8,7 @@ class ResultsController < ApplicationController
     @store_results = Store.joins(:styles)
     .where('stores.min <= :age AND :age <= stores.max', {age: age})
     .where('styles.sex = :sex', {sex: sex})
-    # .where('styles.id' = {style: style})
+    .where('styles.id = :style', {style: style})
     # .uniq()
     # binding.pry
     puts "RESULTS: #{@store_results.inspect}"

@@ -31,7 +31,7 @@
                      
                   <% Style.all.each do |style| %>
 
-                  <%= check_box_tag style.style%>
+                  <%= check_box_tag(:style) %>
                   <%= label_tag style.style %>
                   <br>
                   <% end %>
