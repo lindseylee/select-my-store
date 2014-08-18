@@ -26,10 +26,13 @@ html, body {
     height: 100%;
 }
 
+h1, h2 {
+    font-family: 'Quicksand', sans-serif;
+}
+
 #container {
 min-height: 100%;
-margin-bottom: -400px;
-position: relative;
+margin-bottom: 100px;
 }
 
 .bigbutton {
@@ -42,7 +45,7 @@ position: relative;
 
 .top-bar {
     height: 130px;
-    background: #016064;
+    background: #2E94C5;
 }
 
 .active {
@@ -61,7 +64,6 @@ li.nav-button {
 }
 
 .clearfooter {
-height: 330px;
 clear: both;
 }
 
@@ -76,30 +78,31 @@ clear: both;
 .bottom-bar {
     height: 100px;
     background-color: black;
-    position: relative;
     margin-bottom: 0;
     display: block;
     width: 100%;
 }
 
 #footer {
-/*height: 330px;*/
-position: relative;
+    height: 100px;
+    position: absolute;
+    width: 100%;
 }
 
 .footer-area {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-top: .4em;
     color: white;
     display: block;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2.5em;
 }
 
 .footer-text {
     display: inline;
-    padding: 70px;
+    padding: 2em;
 }
 
 .fancybutton {
@@ -113,19 +116,48 @@ position: relative;
 
 label {
     /*color: white;*/
-    font-family: 'Archivo Narrow', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 2em;
     color: white;
     background-color: black;
     height: 1.5em;
-    width: 4.9em;
-    
+    width: 6em;    
 }
 
+.vis-hidden {
+    overflow: hidden;
+}
+
+/*.checkbox {
+    display: none;
+}*/
+
+/*input {
+    display: none;
+}*/
+
 label:hover {
-    /*color: white;*/
-    background-color: red;
-    
+    color: white;
+    background-color: #2E94C5;   
+}
+
+.check-box:checked {
+   background-color: #2E94C5  
+}
+
+hr {
+    color: black;
+    height: .05em;
+}
+
+input:checked  + label { 
+    background-color: black;
+    color: white;
+}
+
+input[type=checkbox]:checked  + label { 
+    background-color: #2E94C5;
+    color: white;
 }
 
 .label-classic {
@@ -139,17 +171,25 @@ label:hover {
 }
 
 .button-submit {
-    width: 7em;
+    width: 8.7em;
     height: 3.5em;
-    background-color: red;
+    background-color: #2E94C5;
     border-style: solid black;
     color: white;
-    font-size: 2em;
-    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 1.7em;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.radiobuttons input[type="radio"] {
+    display: none;
 }
 
 .button-submit:hover {
-    background-color: black
+    background-color: black;
 }
 
 .nav-button {
@@ -157,10 +197,16 @@ label:hover {
 }
 
 .matches {
-    display: inline;
+    display: inline-block;
 }
 
+.shop-text {
+    margin-top: 10em;
+}
 
+.store-name {
+    font-family: 'Quicksand', sans-serif;
+}
 
 
 
