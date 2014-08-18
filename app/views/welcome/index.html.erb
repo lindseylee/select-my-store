@@ -2,13 +2,20 @@
 
 <div align="center">
   <br>
-  <h1 class="welcome"><strong>Start Shopping</strong></h1>
+    <div class="welcome">
+      <h1><strong>Start Shopping Here</strong></h1>
+    </div>
+    <br>
   <div class="row">
       <div class="large-12 columns">
          <form action="/results" method="get"> 
           <%=form_tag("/results", method: "post") do%>
+          <div class="small-3 large-6 columns">
             <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
-            <%=text_field_tag :age, '', :placeholder => "Age?"%>
+          </div>
+          <div class="small-3 large-6 columns">
+            <%=text_field_tag :age, '', :placeholder => "What is their age?"%>
+          </div>    
             <%=radio_button_tag(:sex, "female", :class => "femaleradio")%>
             <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
             <%= radio_button_tag(:sex, "male", :class => "maleradio")%>
@@ -21,9 +28,13 @@
             <div class="small-6 large-12 columns">   
                 <%Style.all.each do |style|%>
                 <!-- <button class="fancybutton" --> 
-                <div class="small-1 large-3 columns">  
+                <div class="small-1 large-3 columns"> 
+                  <div class="checkbox">
+                  <div class="check-box"> 
                   <%=check_box_tag style[:style], style[:id]%>
+                  </div>
                   <%=label_tag style.style%> <!-- </button> -->
+                  </div>
                     <br>
                 </div>
                 <%end%>
@@ -33,7 +44,7 @@
           </div>
               <br>
               <br>
-                <%=submit_tag("See Your Results", :class => "button-submit")%>
+                <%=submit_tag("View Results", :class => "button-submit")%>
                 <%end%>
         </div>
     </div>
