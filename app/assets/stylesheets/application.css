@@ -28,6 +28,11 @@ html, body {
 
 h1, h2 {
     font-family: 'Quicksand', sans-serif;
+    margin: 1em;
+}
+
+.styles-container {
+    /* stuff goes here */
 }
 
 #container {
@@ -121,7 +126,8 @@ label {
     color: white;
     background-color: black;
     height: 1.5em;
-    width: 6em;    
+    width: 6em; 
+    box-shadow: 1em   
 }
 
 .vis-hidden {
@@ -162,8 +168,11 @@ input[type=checkbox]:checked  + label {
 
 .label-classic {
     color: black;
-    font-size: 1.5em;
+    font-size: 2em;
     background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .fancybutton:hover {
@@ -178,9 +187,10 @@ input[type=checkbox]:checked  + label {
     color: white;
     font-size: 1.7em;
     font-family: 'Quicksand', sans-serif;
+    margin-top: 1.9em;
 }
 
-.checkbox input[type="checkbox"] {
+.style-button input[type="checkbox"] {
     display: none;
 }
 
