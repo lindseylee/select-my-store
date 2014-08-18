@@ -29,11 +29,9 @@
                 <%Style.all.each do |style|%>
                 <!-- <button class="fancybutton" --> 
                 <div class="small-1 large-3 columns"> 
-                  <div class="checkbox">
-                  <div class="check-box"> 
-                  <%=check_box_tag style[:style], style[:id]%>
-                  </div>
-                  <%=label_tag style.style%> <!-- </button> -->
+                  <div class="checkbox"> 
+                  <%=check_box_tag'style[]', style[:id]%>
+                  <%=label_tag(:style, style.style, :type => "checkbox")%> 
                   </div>
                     <br>
                 </div>
