@@ -1,63 +1,52 @@
 
 
 <div align="center">
-  <br>
-    <div class="welcome">
-      <h1><strong>Start Shopping Here</strong></h1>
-    </div>
-    <br>
+  <div class="row welcome">
+    <h1><strong>Start Shopping Here</strong></h1>
+  </div>
   <div class="row">
-      <div class="large-12 columns">
-         <form action="/results" method="get"> 
-          <%=form_tag("/results", method: "post") do%>
-          <div class="small-3 large-6 columns">
-            <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
+    <%= form_tag("/results", method: "post") do %>
+    <div class="large-12 columns">
+        <div class="small-3 large-6 columns">
+          <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
+          <%=text_field_tag :age, '', :placeholder => "What is their age?"%>
+        </div> 
+        <div class="radiobuttons">
+          <div class="small-3 large-6 columns">  
+          <%=radio_button_tag(:sex, "female", false, :class => "femaleradio")%>
+          <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
+          <%= radio_button_tag(:sex, "male", false, :class => "maleradio")%>
+          <%= label_tag(:sex_male, "Male", :class => "label-classic")%>
           </div>
-          <div class="small-3 large-6 columns">
-            <%=text_field_tag :age, '', :placeholder => "What is their age?"%>
-          </div>    
-            <%=radio_button_tag(:sex, "female", :class => "femaleradio")%>
-            <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
-            <%= radio_button_tag(:sex, "male", :class => "maleradio")%>
-            <%= label_tag(:sex_male, "Male", :class => "label-classic")%>
-            <br>
-            <br>
-        <h2><strong>Choose Three Styles</strong></h2>
-          <br>
-          <div class="row">
-            <div class="small-6 large-12 columns">   
-                <%Style.all.each do |style|%>
-                <!-- <button class="fancybutton" --> 
-                <div class="small-1 large-3 columns"> 
-                  <div class="checkbox"> 
-                  <%=check_box_tag'style[]', style[:id]%>
-                  <%=label_tag(:style, style.style, :type => "checkbox")%> 
-                  </div>
-                    <br>
-                </div>
-                <%end%>
-                  <br>
-                  <br>
-            </div>
-          </div>
-              <br>
-              <br>
-                <%=submit_tag("View Results", :class => "button-submit")%>
-                <%end%>
         </div>
     </div>
+    <div class="row">
+      <div class="large-12 columns">
+        <h2><strong>Choose Three Styles</strong></h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns styles-container">   
+          <% Style.all.each do |style|%>
+          <!-- <button class="fancybutton" --> 
+          <div class="style-button <%= style.sex %>" data-sex="<%= style.sex %>" data-style="<%= style.style %>">
+            <!-- <div class="checkbox">  -->
+            <%= check_box_tag'style[]', style[:id], false, :id => "stylechoice#{style.id}"%>
+            <%= label_tag("stylechoice#{style.id}", style.style, :type => "checkbox")%> 
+            <!-- </div> -->
+          </div>
+          <%end%>
+      </div>
+    </div>
+    <div class="row">
+      <div class="large-12 columns">
+      <%=submit_tag("View Results", :class => "button-submit")%>
+      </div>
+    </div> 
+    <% end %>
+  </div>
 </div>
 
-<script> $(document).ready ->
-   $(document).ready(function() {
-   $('input[name="female"][value="Experienced"]').click(function() {
-     $("#tyx").show();
-   });
-   $('input[name="male"][value="Fresher"]').click(function() {
-     $("#tyx").hide();
-   });
- });
-</script>
-           
+
   
 
