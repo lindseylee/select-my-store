@@ -1,22 +1,27 @@
-<br>
-<h1 align="center"><strong>Shopping Matches</strong> </h1>
+<div class="matches">
+    <div class="row">
+        <div class="large-12 columns"
+            <br>
+            <h1><strong>Shopping Matches</strong> </h1>
+        </div>
+            <div class="row">
+                <div class="large-6.columns">
+                    <% @store_results.all.each do |store| %>
+                    <img src= <%=  store.image %> width="350" height="350">
+                <div>
+                <div class="large-6.columns">
+                    <%= store.name %>
+                    <%= link_to "Visit Website", store.website %>
+                    <p><%= store.description %></p>
+                </div>
+                    <br>
+                    <br>
+                <% end %>   
+            </div>   
+    </div> 
 </div>
 
-
-
-<div>
-    <% @store_results.all.each do |store| %>
-    <img src= <%=  store.image %> width="350" height="350">
-    <br>
-    <br>
-    <%= store.name %>
-    <%= link_to "Visit Website", store.website %>
-    <p><%= store.description %></p>
-    <% end %>
-    
-</div> 
-
-
+  
 
 
 <!-- 
