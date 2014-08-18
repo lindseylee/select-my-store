@@ -1,24 +1,30 @@
-<div class="matches">
+<br>
+<div class="row">
+    <div class="small-6 large-centered columns">
+        <h1><strong>Shopping Matches</strong></h1>
+    </div>
+</div>
+<br>
+<div>
     <div class="row">
-        <div class="large-12 columns"
-            <br>
-            <h1><strong>Shopping Matches</strong> </h1>
-        </div>
-            <div class="row">
-                <div class="large-6.columns">
-                    <% @store_results.all.each do |store| %>
+        <div class="large-12 columns matches">
+                <% @store_results.all.each do |store| %>
+                <div class="row">
+                    <div class="large-6 columns">
                     <img src= <%=  store.image %> width="350" height="350">
-                <div>
-                <div class="large-6.columns">
+                </div>
+                <div class="large-6 columns">
                     <%= store.name %>
                     <%= link_to "Visit Website", store.website %>
                     <p><%= store.description %></p>
                 </div>
-                    <br>
-                    <br>
-                <% end %>   
-            </div>   
-    </div> 
+            <hr>
+                <br>
+                <br>
+            <% end %>  
+      
+        </div> 
+    </div>
 </div>
 
   
