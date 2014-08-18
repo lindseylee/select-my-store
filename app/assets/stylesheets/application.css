@@ -22,6 +22,16 @@ welcome {
     text-align: center
 }
 
+html, body {
+    height: 100%;
+}
+
+#container {
+min-height: 100%;
+margin-bottom: -400px;
+position: relative;
+}
+
 .bigbutton {
     color: black;
 }
@@ -32,25 +42,39 @@ welcome {
 
 .top-bar {
     height: 130px;
-    background: black;
+    background: #016064;
 }
 
 .active {
     background-color: red;
 }
-
-.right {
-
+    
+.style-text {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    background:url(check_radio_sheet.png) left top no-repeat;
 }
-
-
 
 li.nav-button {
     background-color: red
 }
 
+.clearfooter {
+height: 330px;
+clear: both;
+}
+
+.styles {
+    display: inline;
+}
+
+.style-options {
+
+}
+
 .bottom-bar {
-    height: 130px;
+    height: 100px;
     background-color: black;
     position: relative;
     margin-bottom: 0;
@@ -58,20 +82,70 @@ li.nav-button {
     width: 100%;
 }
 
-.button {
+#footer {
+/*height: 330px;*/
+position: relative;
+}
+
+.footer-area {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    display: block;
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2.5em;
+}
+
+.footer-text {
+    display: inline;
+    padding: 70px;
+}
+
+.fancybutton {
     background-color: black;
     color: white;
 }
 
-.button:hover {
+.style-text {
+    display: inline;
+}
+
+label {
+    /*color: white;*/
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 2em;
+    color: white;
+    background-color: black;
+    height: 1.5em;
+    width: 4.9em;
+    
+}
+
+label:hover {
+    /*color: white;*/
+    background-color: red;
+    
+}
+
+.label-classic {
+    color: black;
+    font-size: 1.5em;
+    background-color: white;
+}
+
+.fancybutton:hover {
     background-color: red;
 }
 
 .button-submit {
-    width: 11em;
-    height: 4em;
+    width: 7em;
+    height: 3.5em;
     background-color: red;
     border-style: solid black;
+    color: white;
+    font-size: 2em;
+    font-family: 'Archivo Narrow', sans-serif;
 }
 
 .button-submit:hover {
@@ -82,7 +156,9 @@ li.nav-button {
     background-color: red
 }
 
-
+.matches {
+    display: inline;
+}
 
 
 
