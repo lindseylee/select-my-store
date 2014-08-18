@@ -1,58 +1,53 @@
 
 
-
 <div align="center">
-<br>
-<h1 class="welcome"><strong>Start Shopping</strong></h1>
-
-<div class="row">
-        <div class="small-6 large-centered columns"
-
-            <div id="content">
-            <!-- <form action="/results" method="get"> -->
-            <%= form_tag("/results", method: "post") do %>
-
-              
-               <%= text_field_tag('', '', :placeholder => "Who are you shopping for?") %>
-              <%= text_field_tag :age, '', :placeholder => "Age?" %>
-                
-                  <%= radio_button_tag(:sex, "female") %>
-                  <%= label_tag(:sex_female, "Female") %>
-                  <%= radio_button_tag(:sex, "male") %>
-                  <%= label_tag(:sex_male, "Male") %>
-             
-
-
-                
-        
-                  <!-- <input class="button" id="topbutton" type='button' value="Submit"/> -->
-                   <h2><strong>Choose Three Styles</strong></h2>
-                   <br>
-                     
-                  <% Style.all.each do |style| %>
-
-                  <%= check_box_tag(:style) %>
-                  <%= label_tag style.style %>
-                  <br>
-                  <% end %>
+  <br>
+  <h1 class="welcome"><strong>Start Shopping</strong></h1>
+  <div class="row">
+      <div class="large-12 columns">
+         <form action="/results" method="get"> 
+          <%=form_tag("/results", method: "post") do%>
+            <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
+            <%=text_field_tag :age, '', :placeholder => "Age?"%>
+            <%=radio_button_tag(:sex, "female", :class => "femaleradio")%>
+            <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
+            <%= radio_button_tag(:sex, "male", :class => "maleradio")%>
+            <%= label_tag(:sex_male, "Male", :class => "label-classic")%>
+            <br>
+            <br>
+        <h2><strong>Choose Three Styles</strong></h2>
+          <br>
+          <div class="row">
+            <div class="small-6 large-12 columns">   
+                <%Style.all.each do |style|%>
+                <!-- <button class="fancybutton" --> 
+                <div class="small-1 large-3 columns">  
+                  <%=check_box_tag style[:style], style[:id]%>
+                  <%=label_tag style.style%> <!-- </button> -->
+                    <br>
+                </div>
+                <%end%>
                   <br>
                   <br>
-
-                  <button class="button-submit" <%= "See Your Results" %></button>
-                <% end %>
-
-<br>
-<br>
-      </div>
+            </div>
+          </div>
+              <br>
+              <br>
+                <%=submit_tag("See Your Results", :class => "button-submit")%>
+                <%end%>
+        </div>
     </div>
-  </div>
 </div>
 
 <script> $(document).ready ->
-  $("#new_article").on("ajax:success", (e, data, status, xhr) ->
-    $("#new_article").append xhr.responseText
-  ).on "ajax:error", (e, xhr, status, error) ->
-    $("#new_article").append "<p>ERROR</p>"
+   $(document).ready(function() {
+   $('input[name="female"][value="Experienced"]').click(function() {
+     $("#tyx").show();
+   });
+   $('input[name="male"][value="Fresher"]').click(function() {
+     $("#tyx").hide();
+   });
+ });
 </script>
            
   
