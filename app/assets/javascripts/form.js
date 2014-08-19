@@ -31,7 +31,11 @@ $(document).ready(function() {
     var $isotopeContainer = $('.styles-container');
     $isotopeContainer.isotope({
         itemSelector: '.style-button',
-        layoutMode: 'masonry'
+        layoutMode: 'masonry',
+        masonry: {
+            // columnWidth: 234,
+            // isFitWidth: true
+        }
     });
 
     $('.radiobuttons input[type="radio"]').on('change', function(){
