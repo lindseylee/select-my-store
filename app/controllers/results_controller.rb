@@ -13,6 +13,10 @@ class ResultsController < ApplicationController
     # .uniq()
     # binding.pry
     puts "RESULTS: #{@store_results.inspect}"
+
+    if @store_results.length == 0
+        print "There were no matches found."
+    end
     
   end
 
