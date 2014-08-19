@@ -31,6 +31,11 @@ h1, h2 {
     margin: 1em;
 }
 
+.gender-label {
+    font-family: 'Quicksand', sans-serif;
+    font-style: 2em;
+}
+
 .styles-container {
     /* stuff goes here */
 }
@@ -61,7 +66,6 @@ margin-bottom: 100px;
     display:inline-block;
     width:19px;
     height:19px;
-    background:url(check_radio_sheet.png) left top no-repeat;
 }
 
 li.nav-button {
@@ -81,17 +85,13 @@ clear: both;
 }
 
 .bottom-bar {
+    width: 100%;
     height: 100px;
     background-color: black;
     margin-bottom: 0;
     background-color: black;
-    position: fixed;
+    position: relative;
     bottom: 0;
-}
-
-#footer {
-    
-
 }
 
 .footer-text {
@@ -169,6 +169,10 @@ input[type=checkbox]:checked  + label {
     background-color: red;
 }
 
+.store_description{
+    padding-top: 130px;
+}
+
 .button-submit {
     width: 8.7em;
     height: 3.5em;
@@ -197,7 +201,20 @@ input[type=checkbox]:checked  + label {
 }
 
 .matches {
-    margin-bottom: 2em;
+    border-bottom: 6px;
+    border-bottom-color: black;
+    margin-bottom: 90px;
+}
+
+#matches {
+    margin-bottom: 5em;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+}
+
+.shop_matches {
+    margin-left: 0;
+    margin-right: 0;
 }
 
 .shop-text {

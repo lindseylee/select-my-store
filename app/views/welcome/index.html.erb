@@ -12,14 +12,16 @@
           <%=text_field_tag :age, '', :placeholder => "What is their age?"%>
         </div> 
         <div class="radiobuttons">
-          <div class="small-3 large-6 columns">  
-          <%=radio_button_tag(:sex, "female", false, :class => "femaleradio")%>
+          <div class="small-3 large-6 columns sex-buttons">  
+          <p class"gender-label">Gender?</p>
+          <%=radio_button_tag(:sex, "female", false, :class => "label-classic")%>
           <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
-          <%= radio_button_tag(:sex, "male", false, :class => "maleradio")%>
+          <%= radio_button_tag(:sex, "male", false, :class => "label-classic")%>
           <%= label_tag(:sex_male, "Male", :class => "label-classic")%>
           </div>
         </div>
     </div>
+  </div>
     <div class="row">
       <div class="large-12 columns">
         <h2><strong>Choose Three Styles</strong></h2>
@@ -44,7 +46,6 @@
       </div>
     </div> 
     <% end %>
-  </div>
 </div>
 
 
