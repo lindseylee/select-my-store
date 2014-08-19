@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140805213538) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "store_styles", force: true do |t|
     t.integer  "store_id"
     t.integer  "style_id"
@@ -36,8 +39,8 @@ ActiveRecord::Schema.define(version: 20140805213538) do
     t.integer "style_id", null: false
   end
 
-  add_index "stores_styles", ["store_id", "style_id"], name: "index_stores_styles_on_store_id_and_style_id"
-  add_index "stores_styles", ["style_id", "store_id"], name: "index_stores_styles_on_style_id_and_store_id"
+  add_index "stores_styles", ["store_id", "style_id"], name: "index_stores_styles_on_store_id_and_style_id", using: :btree
+  add_index "stores_styles", ["style_id", "store_id"], name: "index_stores_styles_on_style_id_and_store_id", using: :btree
 
   create_table "styles", force: true do |t|
     t.string   "style"
