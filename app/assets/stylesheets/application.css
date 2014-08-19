@@ -84,30 +84,20 @@ clear: both;
     height: 100px;
     background-color: black;
     margin-bottom: 0;
-    display: block;
-    width: 100%;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
 }
 
 #footer {
-    height: 100px;
-    position: absolute;
-    width: 100%;
-}
+    
 
-.footer-area {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    padding-top: .4em;
-    color: white;
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    font-size: 2.5em;
 }
 
 .footer-text {
-    display: inline;
-    padding: 2em;
+    list-style-type: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .fancybutton {
@@ -207,7 +197,7 @@ input[type=checkbox]:checked  + label {
 }
 
 .matches {
-    display: inline-block;
+    margin-bottom: 2em;
 }
 
 .shop-text {
