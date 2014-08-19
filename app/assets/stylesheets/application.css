@@ -29,15 +29,16 @@ html, body {
 h1, h2 {
     font-family: 'Quicksand', sans-serif;
     margin: 1em;
+    border-bottom: solid black;
 }
 
 .gender-label {
     font-family: 'Quicksand', sans-serif;
-    font-style: 2em;
+    font-style: 3em;
 }
 
 .styles-container {
-    /* stuff goes here */
+    margin-left: 75px;
 }
 
 #container {
@@ -86,6 +87,7 @@ clear: both;
 
 .bottom-bar {
     width: 100%;
+    max-width: 100%;
     height: 100px;
     background-color: black;
     margin-bottom: 0;
@@ -132,9 +134,16 @@ label {
     display: none;
 }*/
 
+.style-button {
+   padding: .4em; 
+}
+
 label:hover {
     color: white;
-    background-color: #2E94C5;   
+    background-color: #2E94C5; 
+    border-color: black;
+    border-style: solid;
+    border-width: 3px;  
 }
 
 .check-box:checked {
@@ -147,7 +156,7 @@ hr {
 }
 
 input:checked  + label { 
-    background-color: black;
+    background-color: #2E94C5;
     color: white;
 }
 
@@ -157,20 +166,17 @@ input[type=checkbox]:checked  + label {
 }
 
 .label-classic {
-    color: black;
+    color: white;
     font-size: 2em;
-    background-color: white;
+    background-color: black;
     border-color: black;
     border-style: solid;
     border-width: 3px;
 }
 
-.fancybutton:hover {
-    background-color: red;
-}
-
 .store_description{
-    padding-top: 130px;
+    padding-top: 160px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .button-submit {
@@ -182,6 +188,10 @@ input[type=checkbox]:checked  + label {
     font-size: 1.7em;
     font-family: 'Quicksand', sans-serif;
     margin-top: 1.9em;
+}
+
+.sex-buttons {
+    margin-bottom: 1.7em;
 }
 
 .style-button input[type="checkbox"] {
@@ -201,9 +211,8 @@ input[type=checkbox]:checked  + label {
 }
 
 .matches {
-    border-bottom: 6px;
-    border-bottom-color: black;
-    margin-bottom: 90px;
+    border-bottom: solid black;
+    padding: 2em;
 }
 
 #matches {
