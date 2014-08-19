@@ -1,30 +1,32 @@
-
-
 <div align="center">
   <div class="row welcome">
     <h1><strong>Start Shopping Here</strong></h1>
   </div>
-  <div class="row">
+
     <%= form_tag("/results", method: "post") do %>
-    <div class="large-12 columns">
-        <div class="small-3 large-6 columns">
+      <div class="row">
+        <div class="small-6 large-centered columns">
           <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
-          <%=text_field_tag :age, '', :placeholder => "What is their age?"%>
         </div> 
-        <div class="radiobuttons">
-          <div class="small-3 large-6 columns sex-buttons">  
-          <p class"gender-label">Gender?</p>
+      </div>
+      <div class="row">
+        <div class="small-6 large-centered columns">
+          <%=text_field_tag :age, '', :placeholder => "What is their age?", :required => true%>
+        </div>
+      </div>
+
+        <div class="row radiobuttons">
+          <div class="large-12 columns sex-buttons">  
+          <h2><strong>Choose Gender</strong></h2>
           <%=radio_button_tag(:sex, "female", false, :class => "label-classic")%>
           <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
           <%= radio_button_tag(:sex, "male", false, :class => "label-classic")%>
           <%= label_tag(:sex_male, "Male", :class => "label-classic")%>
           </div>
         </div>
-    </div>
-  </div>
     <div class="row">
       <div class="large-12 columns">
-        <h2><strong>Choose Three Styles</strong></h2>
+        <h2><strong>Choose Style</strong></h2>
       </div>
     </div>
     <div class="row">
@@ -47,6 +49,7 @@
     </div> 
     <% end %>
 </div>
+
 
 
   
