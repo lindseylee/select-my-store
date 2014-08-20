@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="/assets/application.css"
     >
-    <link href='http://fonts.googleapis.com/css?family=Roboto:500italic,400,300' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:400italic,400,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
 
     <title><%= content_for?(:title) ? yield(:title) : "Shopping Sherpa" %></title>
@@ -14,40 +14,39 @@
     <%= javascript_include_tag "vendor/modernizr" %>
     <%= csrf_meta_tags %>
  
-<nav class="top-bar" data-topbar>
-      <a href="/"><img src="/assets/logo/logo-header-blue.png" height="300" width="500"></a>
-</nav>
 </head>
-  <body class="homecontainer">
+<body class="<%= controller_name %>container">
   <div id="container">
+    <nav class="top-bar" data-topbar>
+          <a href="/"><img src="/assets/logo/logo-header-blue.png" height="300" width="500"></a>
+    </nav>
     <%= yield %>
-    <%= javascript_include_tag "application" %>
+    <div class="footer-push"></div>
   </div>
-</body>
 
-<div class="clearfooter"></div>
-
-  <div class="row bottom-bar">
+  <div class="row bottom-bar footer">
     <div class="large-12 columns">
-        <ul>
-          <div class="large-3 columns">
-            <li class="footer-text"><a href='/partner'>PARTNER WITH US</a></li>
+      <ul>
+        <div class="large-4 columns">
+          <li class="footer-text"><a href='/partner'>PARTNER WITH US</a></li>
+        </div>
+        <div class="large-2 columns">
+          <li class="footer-text"><a href='/about'>ABOUT</a></li>
+        </div>
+        <div class="large-4 columns">
+          <li class="footer-text"><a href='/contact'>CONTACT US</a></li>
+        </div>
+          <div class="large-2 columns" style="list-style-type: none;">
+           <li class="social-media-icons"> <a href="http://www.facebook.com/shoppingsherpa" target="_blank"><img src="/assets/socialmedia/facebook-logo.png" height="55" width="55"></a>
+        <a href="http://www.twitter.com/shopping_sherpa" target="_blank"><img src="/assets/socialmedia/twitter-logo.png" height="55" width="55"></a> </li>
           </div>
-          <div class="large-2 columns">
-            <li class="footer-text"><a href='/about'>ABOUT</a></li>
-          </div>
-          <div class="large-2 columns">
-            <li class="footer-text"><a href='/about'>CONTACT US</a></li>
-          </div>
-            <div class="large-2 columns">
-             <li class="social-media-icons"> <a href="http://www.facebook.com/shoppingsherpa" target="_blank"><img src="/assets/socialmedia/facebook-logo.png" height="60" width="60"></a>
-          <a href="http://www.twitter.com/shopping_sherpa" target="_blank"><img src="/assets/socialmedia/twitter-logo.png" height="60" width="60"></a> </li>
-            </div>
-        </ul>
-        <script type="text/javascript" src="/assets/form.js"></script>
-        <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script src="/assets/isotope.pkgd.min.js"></script>
+      </ul>
+      <%= javascript_include_tag "application" %>
+      <script type="text/javascript" src="/assets/form.js"></script>
     </div>  
   </div>
+<!-- <div class="clearfooter"></div> -->
+
+</body>
 
 </html>
