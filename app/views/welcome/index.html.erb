@@ -5,12 +5,12 @@
 
     <%= form_tag("/results", method: "post") do %>
       <div class="row">
-        <div class="small-6 large-centered columns">
+        <div class="small-7 large-centered columns input">
           <%=text_field_tag('', '', :placeholder => "Who are you shopping for?")%>
         </div> 
       </div>
       <div class="row">
-        <div class="small-6 large-centered columns">
+        <div class="small-7 large-centered columns input">
           <%=text_field_tag :age, '', :placeholder => "What is their age?", :required => true%>
         </div>
       </div>
@@ -44,7 +44,7 @@
     </div>
     <div class="row">
       <div class="large-12 columns">
-      <%=submit_tag("View Results", :class => "button-submit")%>
+      <%=submit_tag("VIEW RESULTS", :class => "button-submit")%>
       </div>
       <% end %>
     </div> 
