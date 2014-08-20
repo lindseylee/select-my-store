@@ -27,9 +27,54 @@ html, body {
 }
 
 h1, h2 {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
     margin: 1em;
     border-bottom: solid black;
+}
+
+a {
+    color: white;
+}
+
+li.social-media-icons:hover {
+    list-style-type: none;   
+}
+
+/*a:hover {
+    background-color: #2E94C5; 
+    color: white;
+}*/
+
+a.website-text {
+    color: #2E94C5;
+}
+
+/*a:link:hover {
+    background-color: #2E94C5;
+}*/
+
+.landing-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+.landing-image {
+    z-index: -1;
+    position: relative;
+}
+
+.start-shopping-btn {
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif; 
+    background-color: black;
+    color: white;
+    margin-top: 25em;
+    margin-right: 2em;
+}
+
+.start-shopping-btn:hover {
+    background-color: #2E94C5;
 }
 
 .gender-label {
@@ -38,12 +83,24 @@ h1, h2 {
 }
 
 .styles-container {
-    margin-left: 75px;
 }
 
 #container {
-min-height: 100%;
-margin-bottom: 100px;
+min-height: 83%;
+background-image: url('/assets/main-image.jpg');
+background-position: center center;
+background-repeat: no-repeat;
+background-size: cover;
+/*margin-bottom: 100px;*/
+}
+
+#shop-form-container {
+    background-image: none !important;
+    background-color: white;
+}
+
+.body.home-container {
+
 }
 
 .bigbutton {
@@ -85,10 +142,14 @@ clear: both;
 
 }
 
+.results-header {
+    font-size: 5em;
+}
+
 .bottom-bar {
     width: 100%;
     max-width: 100%;
-    height: 100px;
+    height: auto;
     background-color: black;
     margin-bottom: 0;
     background-color: black;
@@ -99,7 +160,15 @@ clear: both;
 .footer-text {
     list-style-type: none;
     color: white;
+    text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-size: 3em;
+    margin: auto;
+}
+
+li.footer-text a:hover {
+    background-color: #2E94C5;
+    color: white;
 }
 
 .fancybutton {
@@ -122,6 +191,16 @@ label {
     box-shadow: 1em   
 }
 
+.social-media-icons {
+    margin-top: 7px;
+    padding-left: 10px;
+    float: right;
+}
+
+.social-media-icons:hover {
+    background-color: none;
+}
+
 .vis-hidden {
     overflow: hidden;
 }
@@ -130,9 +209,9 @@ label {
     display: none;
 }*/
 
-/*input {
-    display: none;
-}*/
+.name {
+    /*display: none;*/
+}
 
 .style-button {
    padding: .4em; 
@@ -186,8 +265,9 @@ input[type=checkbox]:checked  + label {
     border-style: solid black;
     color: white;
     font-size: 1.7em;
-    font-family: 'Quicksand', sans-serif;
     margin-top: 1.9em;
+    margin-bottom: 2em;
+    font-family: 'Roboto', sans-serif;
 }
 
 .sex-buttons {
@@ -212,7 +292,7 @@ input[type=checkbox]:checked  + label {
 
 .matches {
     border-bottom: solid black;
-    padding: 2em;
+    padding: 2.3em;
 }
 
 #matches {
@@ -224,6 +304,8 @@ input[type=checkbox]:checked  + label {
 .shop_matches {
     margin-left: 0;
     margin-right: 0;
+    background-image: none;
+    background-color: white;
 }
 
 .shop-text {
