@@ -33,7 +33,7 @@ $(document).ready(function() {
         itemSelector: '.style-button',
         layoutMode: 'masonry',
         masonry: {
-            // columnWidth: 234,
+            // columnWidth: 200,
             // isFitWidth: true
         }
     });

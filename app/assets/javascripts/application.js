@@ -13,7 +13,9 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require turbolinks
-//= require_tree .
+//= require isotope.pkgd.min
+//= require masonry.pkgd.min.js
+//= require results
+//= require welcome
 
 $(function(){ $(document).foundation(); });
