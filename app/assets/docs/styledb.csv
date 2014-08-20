@@ -65,12 +65,12 @@ SSENSE,female,minimalist
 SSENSE,male,casual
 SSENSE,male,dapper
 SSENSE,male,hipster
-Barney's,female,professional
-Barney's,female,minimalist
-Barney's,female,chic
-Barney's,male,professional
-Barney's,male,dapper
-Barney's,male,metro
+Barneys,female,professional
+Barneys,female,minimalist
+Barneys,female,chic
+Barneys,male,professional
+Barneys,male,dapper
+Barneys,male,metro
 Kitson,female,casual
 Kitson,female,sporty
 Kitson,female,hipster
@@ -125,7 +125,6 @@ Mod Cloth,female,classic
 Mod Cloth,female,mod
 Mod Cloth,female,delicate
 Mod Cloth,female,flirty
-Mod Cloth,female,modest
 Insight,male,surfer
 Insight,male,sporty
 Insight,male,surfer
