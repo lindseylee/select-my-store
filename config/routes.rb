@@ -1,8 +1,17 @@
 Rails.application.routes.draw do
 
-  root 'welcome#index'
+  root 'landing#landing'
+  get '/welcome' => 'welcome#index'
+  get '/about' => 'pages#about'
+  get '/contact' => 'feedbacks#new'
+  get '/partner' => 'pages#partner'
   post '/results' => 'results#results'
   get 'results' => 'results#results' 
+  get '/:feedbacks/:new' => 'feedback#new'
+  resources :landing
+  resources :feedbacks, :only => [:new, :create] do
+  get 'thank_you', :on => :collection 
+end
   
 
   #get '/', to: '/'
