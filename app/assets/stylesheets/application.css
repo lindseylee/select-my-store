@@ -26,8 +26,22 @@ html, body {
     height: 100%;
 }
 
+#container {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -60px; /* the bottom margin is the negative value of the footer's height */
+}
+.footer, .footer-push {
+    height: 60px;
+    clear: both;
+}
+.store-image {
+    height: 350px;
+}
+
 h1, h2 {
-    font-family: 'Roboto', sans-serif; 
+    font-family: 'Roboto Condensed', sans-serif; 
     font-weight: 400;
     margin: 1em;
     border-bottom: solid black;
@@ -50,6 +64,10 @@ a.website-text {
     color: #2E94C5;
 }
 
+.black-link {
+    color: #2E94C5;
+}
+
 /*a:link:hover {
     background-color: #2E94C5;
 }*/
@@ -64,16 +82,47 @@ a.website-text {
     position: relative;
 }
 
+.landing-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    color: #2E94C5; 
+    text-align: right;
+    font-size: 65px;
+    font-style: bold;
+    line-height: 40px;
+    float: right;
+    margin-top: 13px;
+}
+
+.landing-text-bottom {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400italic;
+    font-style: italic;
+    color: #2E94C5; 
+    text-align: right;
+    font-size: 65px;
+    line-height: 20px;
+    float: right;
+    margin-top: 13px;
+}
+
+.start-shopping-container {
+    margin-top: 315px;
+}
+
 .start-shopping-btn {
-    font-size: 50px;
-    font-family: 'Roboto', sans-serif; 
+    font-size: 40px;
+    font-family: 'Roboto Condensed', sans-serif; 
     background-color: black;
     color: white;
-    margin-top: 25em;
-    margin-right: 2em;
+    margin-top: 300px;
+    margin-left: 80px;
+    position: relative;
+    padding: 9px;
 }
 
 .start-shopping-btn:hover {
+    color: white;
     background-color: #2E94C5;
 }
 
@@ -83,15 +132,18 @@ a.website-text {
 }
 
 .styles-container {
+    margin-left: 32px;
 }
 
-#container {
-min-height: 83%;
-background-image: url('/assets/main-image.jpg');
-background-position: center center;
-background-repeat: no-repeat;
-background-size: cover;
-/*margin-bottom: 100px;*/
+.no-matches-container {
+    margin-top: -30px;
+}
+
+.landingcontainer #container {
+    background-image: url('/assets/main-image-notxt.jpg');
+    background-position: center 1%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #shop-form-container {
@@ -99,7 +151,23 @@ background-size: cover;
     background-color: white;
 }
 
-.body.home-container {
+.contact-container {
+    background-image: url('/assets/snow-lr.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about-container {
+    background-color: white;
+}
+
+.partner-container {
+    background-color: white;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 60px;
+    margin-top: -20px
 
 }
 
@@ -126,6 +194,49 @@ background-size: cover;
     height:19px;
 }
 
+.contact-header {
+    font-family: 'Roboto Condensed', sans-serif; 
+    font-weight: 400;
+    margin: 1em;
+    border-bottom: solid black;
+    text-align: right;
+    margin-top: 10px;
+}
+
+.contact-button {
+    font-size: 35px;
+    font-family: 'Roboto Condensed', sans-serif; 
+    background-color: black;
+    color: white;
+    width: 70%;
+    margin-bottom: 30px;
+    margin-left: 35px;
+}
+
+.contact-button:hover {
+    background-color: #2E94C5;
+}
+
+.basic-text {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    margin-top: -10px;
+}
+
+.basic-text-med {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+  }
+
+.basic-text-large {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+  }
+
 li.nav-button {
     background-color: red
 }
@@ -143,27 +254,34 @@ clear: both;
 }
 
 .results-header {
-    font-size: 5em;
+    font-size: 30px;
+}
+
+.shop-matches-container {
+    background-color: white;
+}
+
+.results-no-matches {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    margin-top: 0;
 }
 
 .bottom-bar {
     width: 100%;
     max-width: 100%;
-    height: auto;
+    height: 60px;
     background-color: black;
-    margin-bottom: 0;
-    background-color: black;
-    position: relative;
-    bottom: 0;
 }
 
 .footer-text {
     list-style-type: none;
     color: white;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
-    font-size: 3em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
     margin: auto;
+    margin-top: 5px;
 }
 
 li.footer-text a:hover {
@@ -182,7 +300,7 @@ li.footer-text a:hover {
 
 label {
     /*color: white;*/
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 2em;
     color: white;
     background-color: black;
@@ -191,8 +309,13 @@ label {
     box-shadow: 1em   
 }
 
+.beta-image {
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .social-media-icons {
-    margin-top: 7px;
+    margin-top: 4px;
     padding-left: 10px;
     float: right;
 }
@@ -244,6 +367,11 @@ input[type=checkbox]:checked  + label {
     color: white;
 }
 
+.input input {
+    height: 60px;
+    font-size: 26px;
+}
+
 .label-classic {
     color: white;
     font-size: 2em;
@@ -255,7 +383,7 @@ input[type=checkbox]:checked  + label {
 
 .store_description{
     padding-top: 160px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .button-submit {
@@ -267,7 +395,7 @@ input[type=checkbox]:checked  + label {
     font-size: 1.7em;
     margin-top: 1.9em;
     margin-bottom: 2em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .sex-buttons {
@@ -297,7 +425,7 @@ input[type=checkbox]:checked  + label {
 
 #matches {
     margin-bottom: 5em;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.5em;
 }
 
