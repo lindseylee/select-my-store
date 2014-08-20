@@ -1,7 +1,7 @@
 <div class="shop_matches">
 <div class="row" align="center">
     <div class="small-8 large-centered columns">
-        <h1><strong>Shopping Matches</strong></h1>
+        <h1 class="results-header"><strong>SHOPPING MATCHES</strong></h1>
     </div>
 </div>
 
@@ -9,25 +9,24 @@
     <div class="small-11 small-centered columns" id="matches">
         <% @store_results.all.each do |store| %>
             <div class="row matches">
-                <div class="large-6 columns">
+                <div class="large-5 columns">
                     <img src= <%=  store.image %> width="350" height="350">
                 </div>
-                <div class="large-6 columns store_description">
+                <div class="large-7 columns store_description">
                     <%= store.name %>
-                    <%= link_to "Visit Website", store.website, target: "_blank" %>
+                    <%= link_to "Visit Website", store.website, target: "_blank", class: "website-text" %>
                     <br>
                     <!-- store.description --> 
                 </div>  
             </div> 
          <% end %>
-        <%  if @store_results.length == 0 %>
-        <%= print "There were no matches found." %>
-        <% end %>
     </div>
 </div>
-</div>
 
-  
+
+   <!-- if @store_results.length == 0 
+      print "There were no matches found." 
+        end -->
 
 
 <!-- 
