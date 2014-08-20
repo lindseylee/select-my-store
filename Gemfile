@@ -27,6 +27,8 @@ gem 'hirb'
 gem 'pry-byebug'
 gem 'rspec-rails'
 gem 'foundation-rails'
+gem 'pony', '~> 1.10'
+gem 'rails_12factor', group: :production
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
