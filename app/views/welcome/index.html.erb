@@ -1,6 +1,6 @@
-<div align="center">
+<div id="shop-form-container" align="center">
   <div class="row welcome">
-    <h1><strong>Start Shopping Here</strong></h1>
+    <h1>Start Shopping Here</h1>
   </div>
 
     <%= form_tag("/results", method: "post") do %>
@@ -17,7 +17,7 @@
 
         <div class="row radiobuttons">
           <div class="large-12 columns sex-buttons">  
-          <h2><strong>Choose Gender</strong></h2>
+          <h2>Choose Gender</h2>
           <%=radio_button_tag(:sex, "female", false, :class => "label-classic")%>
           <%=label_tag(:sex_female, "Female", :class => "label-classic")%>
           <%= radio_button_tag(:sex, "male", false, :class => "label-classic")%>
@@ -26,7 +26,7 @@
         </div>
     <div class="row">
       <div class="large-12 columns">
-        <h2><strong>Choose Style</strong></h2>
+        <h2>Choose Style</h2>
       </div>
     </div>
     <div class="row">
@@ -46,8 +46,9 @@
       <div class="large-12 columns">
       <%=submit_tag("View Results", :class => "button-submit")%>
       </div>
+      <% end %>
     </div> 
-    <% end %>
+    
 </div>
 
 
